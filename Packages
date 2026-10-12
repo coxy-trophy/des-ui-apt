@@ -1,0 +1,46 @@
+Package: des-ui
+Version: 0.1.0
+Architecture: amd64
+Maintainer: coxy <myredevesuper@gmail.com>
+Installed-Size: 21540
+Depends: libc6 (>= 2.43), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libinput10 (>= 1.19.1), libseat1 (>= 0.5.0), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), libegl1, libwayland-client0, libwayland-cursor0, libwayland-egl1, fontconfig
+Recommends: libgl1-mesa-dri, xwayland, cage, xdg-desktop-portal-gtk, wireplumber, pipewire-bin, network-manager, bluez, iproute2, sudo, curl, wl-clipboard, sound-theme-freedesktop, des-ui-music
+Suggests: ffmpeg, greetd, plymouth-themes
+Filename: ./des-ui_0.1.0_amd64.deb
+Size: 6834864
+MD5sum: 7eb853c0b4b27815074d64ea0dfc1366
+SHA1: 7843048c2d02bfe0b875371d958fc2277febc665
+SHA256: 461fd11e3116a05a8a42200ce6dd0a93a67abbcca366b2ea6ba7057eec048aa4
+Section: x11
+Priority: optional
+Homepage: https://github.com/coxy-trophy/des-ui
+Description: sci-fi terminal desktop
+ DEs-UI is a desktop in the style of a film's computer screens: a terminal in
+ the middle of a frame of live readings, with other applications opening
+ inside the frame. It is its own Wayland compositor, with settings, a lock
+ screen, notifications, screenshots and workspaces.
+ .
+ After installing, log out and choose DEs-UI from the session menu of the
+ login screen.
+
+Package: des-ui-music
+Version: 0.1.0
+Architecture: amd64
+Maintainer: coxy <myredevesuper@gmail.com>
+Installed-Size: 11400
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), des-ui (= 0.1.0), pipewire-bin
+Filename: ./des-ui-music_0.1.0_amd64.deb
+Size: 3317500
+MD5sum: 8699bf0523b2650240f99a9209248350
+SHA1: 7a8ed9481351aff450569ef5382f6e009c6aa45e
+SHA256: 01417c84357e1fb59a213486726610801195c2e19088726f589e2d06563059b4
+Section: x11
+Priority: optional
+Homepage: https://github.com/coxy-trophy/des-ui
+Description: Spotify player for the DEs-UI desktop
+ Plays music from Spotify inside DEs-UI, and shows and controls what is
+ playing on your other devices. It needs a Spotify Premium account.
+ .
+ This is not an official Spotify program: it is built on librespot, an
+ independent client.
+

@@ -1,0 +1,10 @@
+Origin: DEs-UI
+Label: DEs-UI
+Architectures: amd64
+Date: Mon, 12 Oct 2026 10:57:07 UTC
+MD5Sum:
+ 8b844ff6d226917182e630c95a7e2c95 2093 Packages
+ 5b9ef5d977c32f3ac67f4310806027a2 1108 Packages.gz
+SHA256:
+ ed3039a08a876f8fc899b8e502159e9c6adf581e1baa85240511f26ef0cab6fb 2093 Packages
+ b1a0ced99e8289789a59ed2df4725b066b76440f4bc469998b2ef65dd370a554 1108 Packages.gz

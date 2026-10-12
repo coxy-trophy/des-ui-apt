@@ -23,6 +23,53 @@ Description: sci-fi terminal desktop
  After installing, log out and choose DEs-UI from the session menu of the
  login screen.
 
+Package: des-ui
+Version: 0.1.1
+Architecture: amd64
+Maintainer: coxy <myredevesuper@gmail.com>
+Installed-Size: 21556
+Depends: libc6 (>= 2.43), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libinput10 (>= 1.19.1), libseat1 (>= 0.5.0), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), libegl1, libwayland-client0, libwayland-cursor0, libwayland-egl1, fontconfig
+Recommends: libgl1-mesa-dri, xwayland, cage, xdg-desktop-portal-gtk, wireplumber, pipewire-bin, network-manager, bluez, iproute2, sudo, curl, wl-clipboard, sound-theme-freedesktop, des-ui-music
+Suggests: ffmpeg, des-ui-greeter, des-ui-plymouth
+Filename: ./des-ui_0.1.1_amd64.deb
+Size: 6827488
+MD5sum: e94f28f77c475b8bd50eded773409f61
+SHA1: 8612ce13632702a60ae78c2dad15e9a7fff16e8a
+SHA256: 266988e98a9b967aed55a2c90d1bde332bbd999766d7ea30eaf2ce0e06b7e600
+Section: x11
+Priority: optional
+Homepage: https://github.com/coxy-trophy/des-ui
+Description: sci-fi terminal desktop
+ DEs-UI is a desktop in the style of a film's computer screens: a terminal in
+ the middle of a frame of live readings, with other applications opening
+ inside the frame. It is its own Wayland compositor, with settings, a lock
+ screen, notifications, screenshots and workspaces.
+ .
+ After installing, log out and choose DEs-UI from the session menu of the
+ login screen.
+
+Package: des-ui-greeter
+Version: 0.1.1
+Architecture: amd64
+Maintainer: coxy <myredevesuper@gmail.com>
+Installed-Size: 36
+Depends: des-ui (= 0.1.1), greetd
+Filename: ./des-ui-greeter_0.1.1_amd64.deb
+Size: 3792
+MD5sum: 6da16a4d08812bce6619ad7ef285a24c
+SHA1: 98b9735fd0dfff490371355db428a8e943760a29
+SHA256: 01ac68e3fa706b5c15fe878b93a61ff7bc163a6c88a04b86ffad99438028e6ba
+Section: x11
+Priority: optional
+Homepage: https://github.com/coxy-trophy/des-ui
+Description: login screen of the DEs-UI desktop
+ The DEs-UI login screen, in place of the one the system came with. It is run
+ by greetd, a small login manager.
+ .
+ Installing this changes nothing by itself. To make it the login screen from
+ the next boot, run "sudo des-ui-login enable"; "sudo des-ui-login disable"
+ puts back what was there before, and so does removing the package.
+
 Package: des-ui-music
 Version: 0.1.0
 Architecture: amd64
@@ -43,4 +90,47 @@ Description: Spotify player for the DEs-UI desktop
  .
  This is not an official Spotify program: it is built on librespot, an
  independent client.
+
+Package: des-ui-music
+Version: 0.1.1
+Architecture: amd64
+Maintainer: coxy <myredevesuper@gmail.com>
+Installed-Size: 11400
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), des-ui (= 0.1.1), pipewire-bin
+Filename: ./des-ui-music_0.1.1_amd64.deb
+Size: 3318336
+MD5sum: e93dc5fe76c0e9e8a7712b9cc4936ff1
+SHA1: e50fbf2fad7501424627da0e08ef21df43db3348
+SHA256: 93a2e3175e2766586a9a5109bff273e9dd43485787f8e6d1776bcb98e9ac5522
+Section: x11
+Priority: optional
+Homepage: https://github.com/coxy-trophy/des-ui
+Description: Spotify player for the DEs-UI desktop
+ Plays music from Spotify inside DEs-UI, and shows and controls what is
+ playing on your other devices. It needs a Spotify Premium account.
+ .
+ This is not an official Spotify program: it is built on librespot, an
+ independent client.
+
+Package: des-ui-plymouth
+Version: 0.1.1
+Architecture: amd64
+Maintainer: coxy <myredevesuper@gmail.com>
+Installed-Size: 164
+Depends: plymouth
+Suggests: des-ui
+Filename: ./des-ui-plymouth_0.1.1_amd64.deb
+Size: 17458
+MD5sum: 33b5640ac99e00f72fa54311079d38f3
+SHA1: ee761c0efa3876b9032d4b872034956ad0424bba
+SHA256: 4d4ffe0b8c1b6807438ba0dc525812b326470c179b65a7a9fdb8a9ea7e72e723
+Section: x11
+Priority: optional
+Homepage: https://github.com/coxy-trophy/des-ui
+Description: boot splash of the DEs-UI desktop
+ Shows the DEs-UI splash while the machine starts and shuts down: the name,
+ which glitches now and then, over a bar that fills. It is a theme for
+ Plymouth, and becomes the one in use unless you have chosen another.
+ .
+ Installing and removing it rebuild the boot image, which takes a minute.
 

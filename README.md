@@ -11,5 +11,10 @@ terminal desktop. For Ubuntu 26.04 on 64-bit Intel and AMD machines.
 Then log out and choose **DEs-UI** from the session menu on the login screen.
 Updates arrive with the rest of the system's, through `sudo apt upgrade`.
 
+The login screen and the boot splash are packages of their own:
+
+    sudo apt install des-ui-greeter && sudo des-ui-login enable
+    sudo apt install des-ui-plymouth
+
 The packages are signed with the key
 `9095FB60A1CE0BC385FA0FF8CD808CD1DDFCF0DA`.
